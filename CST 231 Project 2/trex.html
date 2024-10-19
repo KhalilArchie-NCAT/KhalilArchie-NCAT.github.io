@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding, viewport, and author information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Khalil Archie">
+    <!-- Page title -->
+    <title>Dino Dash: The T-Rex Coding Adventure</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header section with title and logo -->
+    <header>
+        <h1>Dino Dash: The T-Rex Coding Adventure</h1>
+        <img src="images/dino-logo.png" alt="Dino Dash Logo" class="header-img">
+    </header>
+
+    <!-- Navigation menu with dropdown -->
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Dino Menu</button>
+            <div class="dropdown-content">
+                <!-- Navigation links -->
+                <a href="index.html">Jurassic Home</a>
+                <a href="learn.html">Code Cavern</a>
+                <a href="practice.html">Dino Gym</a>
+                <a href="trex.html">Dino Dash</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Game introduction section -->
+        <section id="game-intro">
+            <h2>Welcome to Dino Dash!</h2>
+            <p>Help our coding T-Rex navigate through a JavaScript jungle. Avoid obstacles and collect code snippets to boost your score!</p>
+            <img src="images/trex-coder.jpeg" alt="T-Rex Coder" class="intro-img">
+        </section>
+
+        <!-- Game instructions section -->
+        <section id="game-instructions">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Press SPACE to make T-Rex jump</li>
+                <li>The longer you survive, the higher your score!</li>
+            </ul>
+            <img src="images/game-controls.png" alt="Game Controls" class="instruction-img">
+        </section>
+
+        <!-- Game start heading -->
+        <h2>Ready, Set, Code!</h2>
+        <!-- Game container for JavaScript rendering -->
+        <div class="game-container">
+            <!-- The game will be rendered here by JavaScript -->
+        </div>
+
+        <!-- Score display section -->
+        <div id="score-display">
+            <h3>Your Coding Score: <span id="score">0</span></h3>
+        </div>
+
+        <!-- Code challenge section -->
+        <section id="code-challenge">
+            <h3>Dino Coder's Corner</h3>
+            <p>Can you enhance the game? Try modifying the code below to add a new feature!</p>
+            <textarea id="user-code" rows="5" placeholder="// Your dino-mite code here..."></textarea>
+            <button onclick="applyUserCode()">Apply Code</button>
+        </section>
+
+        <!-- Trivia section -->
+        <section id="dino-facts">
+            <h3>Coding Trivia</h3>
+            <p>Did you know? The original T-Rex game in Chrome was created to entertain users when there's no internet connection!</p>
+            <img src="images/dino-logo.png" alt="Dino Dash Logo" class="header-img">
+        </section> 
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 - Khalil Archie - CST-231: Web Systems with Dr. Obaidat</p>
+        <!-- HTML validation link -->
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/trex.js"></script>
+</body>
+</html>

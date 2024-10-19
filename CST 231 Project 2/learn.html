@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding, viewport, and author information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Khalil Archie">
+    <!-- Page title -->
+    <title>JavaScript Adventure with Khalil - Learn</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header section with title and logo -->
+    <header>
+        <h1>Learn JavaScript: The Coding Quest</h1>
+        <img src="images/javascript-logo.png" alt="JavaScript Logo" class="header-img">
+    </header>
+
+    <!-- Navigation menu with dropdown -->
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <!-- Navigation links -->
+                <a href="index.html">Home Base</a>
+                <a href="learn.html">Knowledge Tower</a>
+                <a href="practice.html">Challenge Arena</a>
+                <a href="trex.html">T-Rex Adventure</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Welcome section -->
+        <section id="welcome">
+            <h2>Welcome, Code Explorer!</h2>
+            <p>Embark on an exciting journey through the realm of JavaScript. Are you ready to unlock the secrets of coding?</p>
+            <img src="images/code-explorer.png" alt="Code Explorer" class="section-img">
+        </section>
+
+        <!-- Topic selection section -->
+        <section id="topic-selection">
+            <h2>Choose Your Adventure</h2>
+            <p>Select a magical topic to begin your quest:</p>
+            <ul id="topics">
+                <!-- List of topics with icons and onclick events -->
+                <li onclick="loadLesson('variables')">
+                    Variables: The Shape-Shifters
+                </li>
+                <li onclick="loadLesson('loops')">
+                    Loops: The Repeating Spells
+                </li>
+                <li onclick="loadLesson('functions')">
+                    Functions: The Magic Potions
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dynamic lesson content area -->
+        <div id="lesson-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+
+        <!-- Interactive code area -->
+        <div id="code-area">
+            <h3>Spell Casting Area</h3>
+            <p>Write your magical JavaScript code here and see it come to life!</p>
+            <!-- Text area for user input -->
+            <textarea id="user-code" placeholder="Write your javascript spell here..."></textarea>
+            <!-- Button to execute code -->
+            <button onclick="runCode()">Cast Spell (Run Code)</button>
+            <!-- Feedback area for code execution results -->
+            <div id="feedback">
+                <!-- Feedback will appear here after code execution -->
+            </div>
+        </div>
+
+        <!-- Fun facts section -->
+        <section id="fun-facts">
+            <h3>Did You Know?</h3>
+            <p>JavaScript was created in just 10 days by Brendan Eich in 1995!</p>
+            <img src="images/js-fact.png" alt="JavaScript Fun Fact" class="fact-img">
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 - Khalil Archie - CST-231: Web Systems with Dr. Obaidat</p>
+        <!-- HTML validation link -->
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> <br>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/learn.js"></script>
+</body>
+</html>

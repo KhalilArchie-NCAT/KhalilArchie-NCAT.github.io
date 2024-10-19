@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding, viewport, and author information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Khalil Archie">
+    <!-- Page title -->
+    <title>JavaScript Coding Dojo</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header section with title and logo -->
+    <header>
+        <h1>JavaScript Coding Dojo</h1>
+        <img src="images/javascript-logo.png" alt="JavaScript Logo" class="header-img">
+    </header>
+
+    <!-- Navigation menu with dropdown -->
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Training Grounds</button>
+            <div class="dropdown-content">
+                <!-- Navigation links -->
+                <a href="index.html">Dojo Entrance</a>
+                <a href="learn.html">Scroll Room</a>
+                <a href="practice.html">Training Arena</a>
+                <a href="trex.html">T-Rex Adventure</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Welcome section -->
+        <section id="welcome">
+            <h2>Welcome to the Training Arena, Code Warrior!</h2>
+            <p>Here, you'll face challenges that will sharpen your JavaScript skills. Are you ready to level up?</p>
+            <img src="images/code-warrior.png" alt="Code Warrior" class="section-img">
+        </section>
+
+        <!-- Exercise selection section -->
+        <section id="exercise-selection">
+            <h2>Choose Your Challenge</h2>
+            <p>Select a coding kata to begin your training:</p>
+            <ul id="exercises">
+                <!-- List of exercises with icons and onclick events -->
+                <li onclick="loadExercise('exercise1')">
+                    Kata 1: The Variable Forge
+                </li>
+                <li onclick="loadExercise('exercise2')">
+                    Kata 2: The Infinite Loop Dojo
+                </li>
+                <li onclick="loadExercise('exercise3')">
+                    Kata 3: The Function Master's Trial
+                </li>
+            </ul>
+        </section>
+
+        <!-- Exercise content area -->
+        <div id="exercise-content">
+            <!-- Challenge details will be loaded here -->
+        </div>
+
+        <!-- Interactive code area -->
+        <div id="code-area">
+            <h3>Code Combat Zone</h3>
+            <p>Write your JavaScript solution here and test your skills!</p>
+            <!-- Text area for user input -->
+            <textarea id="user-code" placeholder="// Your code here, brave warrior..."></textarea>
+            <!-- Button to execute code -->
+            <button onclick="runCode()">Execute Code</button>
+            <!-- Feedback area for code execution results -->
+            <div id="feedback">
+                <!-- Feedback on code execution will appear here -->
+            </div>
+        </div>
+
+        <!-- Motivational quote section -->
+        <section id="code-wisdom">
+            <h3>Words of the Coding Sensei</h3>
+            <blockquote>"In the dojo of code, practice is the path to mastery."</blockquote>
+            <img src="images/coding-sensei.png" alt="Coding Sensei" class="quote-img">
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 - Khalil Archie - CST-231: Web Systems with Dr. Obaidat</p>
+        <!-- HTML validation link -->
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/practice.js"></script>
+</body>
+</html>
